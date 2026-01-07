@@ -41,6 +41,8 @@ public class TC02_GirisFormuAlanlariGorunurlugu {
         pages.loginPageSignInButton.isDisplayed();
 
         Driver.quitDriver();
+
+        System.out.printf("Deneme");
     }
 
 
