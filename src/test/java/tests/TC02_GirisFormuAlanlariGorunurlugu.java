@@ -26,5 +26,22 @@ public class TC02_GirisFormuAlanlariGorunurlugu {
         Driver.quitDriver();
     }
 
+    @Test
+    public void us_020_TC02_GirisFormuAlanlariGorunurlugu(){
+
+        pages = new WadoudPage();
+        Driver.getDriver().get(ConfigReader.getProperty("url"));
+
+        pages.mainSignInButton.click();
+
+        pages.loginPageSignInEmail.isDisplayed();
+
+        pages.loginPageSignInPassword.isDisplayed();
+
+        pages.loginPageSignInButton.isDisplayed();
+
+        Driver.quitDriver();
+    }
+
 
 }
